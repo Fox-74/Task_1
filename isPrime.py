@@ -18,23 +18,16 @@ while True:
         print("Вы ввели не число! Попробуйте снова:")
 #-----------------------------------------------------
 #Тело проверки простоты числа
-k = 1
-if c % 2 == 0:
-    if c == 2:
-        k = 0
-        print("Ok")
-    else:
-        n = 3
-        print(c)
-        while n * n <= c and c % n != 0:
-            n += 2
-            if n * n > c:
-                k = 0
-                print("OK")
-            else:
-                k = 1
-                print("NO")
-if k == 1:
-    print("OK!")
+if c < 2:
+    print("Число не является простым!")
 else:
-    print("NO!!!")
+    i = 2
+    j = 0
+    while i**2 <= c and j != 1:
+        if c % i == 0:
+           j = 1
+        i += 1
+    if j == 1:
+        print("Число не простое.")
+    else:
+        print("Число простое.")
