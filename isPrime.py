@@ -12,10 +12,26 @@
 #Вторая версия проверки ввода:
 while True:
     try:
-        с = int(input("Введите число:"))
+        c = int(input("Введите число:"))
         break
     except ValueError:
         print("Вы ввели не число! Попробуйте снова:")
-
-
-print(isinstance(с,int))
+#-----------------------------------------------------
+#Тело проверки простоты числа
+k = 1
+if c % 2 == 0:
+    if c == 2:
+        k = 0
+        print("Ok")
+    else:
+        n = 3
+        while n * n <= c and c % n != 0:
+            n += 2
+            if n * n > c:
+                k = 0
+                print("OK")
+            else:
+                k = 0
+                print("NO")
+if k == 1:
+    print("OK!")
