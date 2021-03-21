@@ -25,13 +25,16 @@ if c % 2 == 0:
         print("Ok")
     else:
         n = 3
+        print(c)
         while n * n <= c and c % n != 0:
             n += 2
             if n * n > c:
                 k = 0
                 print("OK")
             else:
-                k = 0
+                k = 1
                 print("NO")
 if k == 1:
     print("OK!")
+else:
+    print("NO!!!")
