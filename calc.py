@@ -44,10 +44,16 @@ try:
                         elif ns.startswith('//'):
                             s = ns.replace('//', '')
                             ns = float(s)
+                            if ns == 0:
+                                print('Результат', chr(8734))
+                                break
                             nu //= ns
                         elif ns.startswith('/'):
                             s = ns.replace('/', '')
                             ns = float(s)
+                            if ns == 0:
+                                print('Результат', chr(8734))
+                                break
                             nn *= nu
                             nn /= ns
                         elif ns.startswith('+'):
@@ -72,10 +78,16 @@ try:
                 elif nu.startswith('//'):
                     s = nu.replace('//', '')
                     nu = float(s)
+                    if nu == 0:
+                        print('Результат',chr(8734))
+                        break
                     nn //= nu
                 elif nu.startswith('/'):
                     s = nu.replace('/', '')
                     nu = float(s)
+                    if nu == 0:
+                        print('Результат',chr(8734))
+                        break
                     while True:
                         # Третий контур вычислений
                         ns = input('Введите операцию и число или = для вывода результата: ')
@@ -91,10 +103,16 @@ try:
                         elif ns.startswith('//'):
                             s = ns.replace('//', '')
                             ns = float(s)
+                            if ns == 0:
+                                print('Результат', chr(8734))
+                                break
                             nu //= ns
                         elif ns.startswith('/'):
                             s = ns.replace('/', '')
                             ns = float(s)
+                            if ns == 0:
+                                print('Результат', chr(8734))
+                                break
                             nn /= nu
                             nn /= ns
                         elif ns.startswith('+'):
@@ -159,10 +177,16 @@ try:
                         elif ns.startswith('//'):
                             s = ns.replace('//', '')
                             ns = float(s)
+                            if ns == 0:
+                                print('Результат', chr(8734))
+                                break
                             nu //= ns
                         elif ns.startswith('/'):
                             s = ns.replace('/', '')
                             ns = float(s)
+                            if ns == 0:
+                                print('Результат', chr(8734))
+                                break
                             nn *= nu
                             nn /= ns
                         elif ns.startswith('+'):
@@ -187,10 +211,16 @@ try:
                 elif nu.startswith('//'):
                     s = nu.replace('//','')
                     nu = float(s)
+                    if nu == 0:
+                        print('Результат',chr(8734))
+                        break
                     nn //= nu
                 elif nu.startswith('/'):
                     s = nu.replace('/','')
                     nu = float(s)
+                    if nu == 0:
+                        print('Результат',chr(8734))
+                        break
                     while True:
                         # Третий контур вычислений
                         ns = input('Введите операцию и число или = для вывода результата: ')
@@ -206,10 +236,16 @@ try:
                         elif ns.startswith('//'):
                             s = ns.replace('//', '')
                             ns = float(s)
+                            if ns == 0:
+                                print('Результат', chr(8734))
+                                break
                             nu //= ns
                         elif ns.startswith('/'):
                             s = ns.replace('/', '')
                             ns = float(s)
+                            if ns == 0:
+                                print('Результат', chr(8734))
+                                break
                             nn /= nu
                             nn /= ns
                         elif ns.startswith('+'):
@@ -268,10 +304,16 @@ try:
                 elif ns.startswith('//'):
                     s = ns.replace('//', '')
                     ns = float(s)
+                    if ns == 0:
+                        print('Результат',chr(8734))
+                        break
                     nn //= ns
                 elif ns.startswith('/'):
                     s = ns.replace('/', '')
                     ns = float(s)
+                    if ns == 0:
+                        print('Результат',chr(8734))
+                        break
                     n *= nn
                     n /= ns
                 elif ns.startswith('+'):
@@ -292,10 +334,16 @@ try:
         elif nn.startswith('//'):
             s = nn.replace('//','')
             nn = float(s)
+            if nn == 0:
+                print('Результат', chr(8734))
+                break
             n //= nn
         elif nn.startswith('/'):
             s = nn.replace('/','')
             nn = float(s)
+            if nn == 0:
+                print('Результат', chr(8734))
+                break
             while True:
                 # Второй контур вычислений
                 ns = input('Введите операцию и число или = для вывода результата: ')
@@ -311,10 +359,16 @@ try:
                 elif ns.startswith('//'):
                     s = ns.replace('//', '')
                     ns = float(s)
+                    if ns == 0:
+                        print('Результат',chr(8734))
+                        break
                     nn //= ns
                 elif ns.startswith('/'):
                     s = ns.replace('/', '')
                     ns = float(s)
+                    if ns == 0:
+                        print('Результат',chr(8734))
+                        break
                     n /= nn
                     n /= ns
                 elif ns.startswith('+'):
