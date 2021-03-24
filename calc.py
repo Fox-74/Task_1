@@ -253,7 +253,42 @@ try:
         elif nn.startswith('*'):
             s = nn.replace('*','')
             nn = float(s)
-            n *= nn
+            while True:
+                # Второй контур вычислений
+                ns = input('Введите операцию и число или = для вывода результата: ')
+                if ns.startswith('**'):
+                    s = ns.replace('**', '')
+                    ns = float(s)
+                    nn **= ns
+                elif ns.startswith('*'):
+                    s = ns.replace('*', '')
+                    ns = float(s)
+                    n *= nn
+                    n *= ns
+                elif ns.startswith('//'):
+                    s = ns.replace('//', '')
+                    ns = float(s)
+                    nn //= ns
+                elif ns.startswith('/'):
+                    s = ns.replace('/', '')
+                    ns = float(s)
+                    n *= nn
+                    n /= ns
+                elif ns.startswith('+'):
+                    s = ns.replace('+', '')
+                    ns = float(s)
+                    n *= nn
+                    n += ns
+                elif ns.startswith('-'):
+                    s = ns.replace('-', '')
+                    ns = float(s)
+                    n *= nn
+                    n -= ns
+                elif ns == '=':
+                    n *= nn
+                    print(f'Результат: {n}')
+                    nn = ns
+                    break
         elif nn.startswith('//'):
             s = nn.replace('//','')
             nn = float(s)
@@ -261,7 +296,43 @@ try:
         elif nn.startswith('/'):
             s = nn.replace('/','')
             nn = float(s)
-            n /= nn
+            while True:
+                # Второй контур вычислений
+                ns = input('Введите операцию и число или = для вывода результата: ')
+                if ns.startswith('**'):
+                    s = ns.replace('**', '')
+                    ns = float(s)
+                    nn **= ns
+                elif ns.startswith('*'):
+                    s = ns.replace('*', '')
+                    ns = float(s)
+                    n *= nn
+                    n /= ns
+                elif ns.startswith('//'):
+                    s = ns.replace('//', '')
+                    ns = float(s)
+                    nn //= ns
+                elif ns.startswith('/'):
+                    s = ns.replace('/', '')
+                    ns = float(s)
+                    n /= nn
+                    n /= ns
+                elif ns.startswith('+'):
+                    s = ns.replace('+', '')
+                    ns = float(s)
+                    n /= nn
+                    n += ns
+                elif ns.startswith('-'):
+                    s = ns.replace('-', '')
+                    ns = float(s)
+                    n /= nn
+                    n -= ns
+                elif ns == '=':
+                    n /= nn
+                    print(f'Результат: {n}')
+                    nn = ns
+                    break
+            #n /= nn
         elif nn == '=':
             print(f'Результат: {n}')
             break
